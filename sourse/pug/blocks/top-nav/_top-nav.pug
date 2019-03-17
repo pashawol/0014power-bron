@@ -18,6 +18,21 @@ mixin top-nav()
 	// start top-nav
 	+b.top-nav.d-none.d-lg-block
 		.container
-			+mnu()
-					
+			.row
+				.col-auto
+					+e.logo.col-auto 
+						a(href="#")
+							img(src="img/logo.png", alt="")
+				.col
+						+mnu()
+				.col-auto
+					+e.basket(href="#")
+						+e.icon-wrap
+							+icon('basket')
+							+e.count 1
+						strong.text-body 1 
+						| 
+						small.text-primary На сумму: 
+						| 
+						span.h2.strong.text-body.mb-0 5 000 руб.
 	// end top-nav

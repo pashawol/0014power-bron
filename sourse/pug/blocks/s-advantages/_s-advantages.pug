@@ -2,7 +2,7 @@ mixin s-advantages()
 	// start s-advantages
 	+b.s-advantages.section#s-advantages.lazy-background&attributes(attributes)
 		.container
-			+e.head
+			+e.head.visible
 				.row
 					mixin item(t)
 						+e.col-head.col-md-4.col-sm-6
@@ -26,7 +26,7 @@ mixin s-advantages()
 					mixin item(i, t)
 						+e.col.col-lg-4.col-sm-6
 							+e.item-body&attributes(attributes)
-								+e.img-wrap
+								+e.img-wrap.visible
 									img.lazy(src="#" data-src=`img/advanteges-${i}.png`, alt="")
 								+e.title-body= t
 						// /+e.col.col-lg-4.col-sm-6 

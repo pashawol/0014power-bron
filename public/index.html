@@ -83,14 +83,27 @@
         <!-- start top-nav-->
         <div class="top-nav d-none d-lg-block">
           <div class="container">
-            <ul class="menu">
-              <li class="menu-item current-menu-item"><a href="#">Применение</a></li>
-              <li class="menu-item"><a href="#">Преимущества</a></li>
-              <li class="menu-item"><a href="#">Продукция</a></li>
-              <li class="menu-item"><a href="#">Доставка</a></li>
-              <li class="menu-item"><a href="#">О комании</a></li>
-              <li class="menu-item"><a href="#">Контакты</a></li>
-            </ul>
+            <div class="row">
+              <div class="col-auto">
+                <div class="top-nav__logo col-auto"> <a href="#"><img src="img/logo.png" alt=""/></a>
+                </div>
+              </div>
+              <div class="col">
+                <ul class="menu">
+                  <li class="menu-item current-menu-item"><a href="#">Применение</a></li>
+                  <li class="menu-item"><a href="#">Преимущества</a></li>
+                  <li class="menu-item"><a href="#">Продукция</a></li>
+                  <li class="menu-item"><a href="#">Доставка</a></li>
+                  <li class="menu-item"><a href="#">О комании</a></li>
+                  <li class="menu-item"><a href="#">Контакты</a></li>
+                </ul>
+              </div>
+              <div class="col-auto"><a class="top-nav__basket" href="#"><span class="top-nav__icon-wrap">
+                <svg class="icon icon-basket ">
+                  <use xlink:href="img/svg/sprite.svg#basket"></use>
+                </svg><span class="top-nav__count">1</span></span><strong class="text-body">1 </strong> <small class="text-primary">На сумму: </small> <span class="h2 strong text-body mb-0">5 000 руб.</span></a>
+              </div>
+            </div>
           </div>
         </div>
         <!-- end top-nav-->
@@ -123,7 +136,7 @@
       <!-- start s-advantages-->
       <div class="s-advantages section lazy-background" id="s-advantages">
         <div class="container">
-          <div class="s-advantages__head">
+          <div class="s-advantages__head visible">
             <div class="row">
                 <div class="s-advantages__col-head col-md-4 col-sm-6">
                   <div class="s-advantages__item">
@@ -181,7 +194,7 @@
             <div class="row">
                 <div class="s-advantages__col col-lg-4 col-sm-6">
                   <div class="s-advantages__item-body">
-                    <div class="s-advantages__img-wrap"><img class="lazy" src="#" data-src="img/advanteges-1.png" alt=""/>
+                    <div class="s-advantages__img-wrap visible"><img class="lazy" src="#" data-src="img/advanteges-1.png" alt=""/>
                     </div>
                     <div class="s-advantages__title-body">Монтаж 10 минут
                     </div>
@@ -190,7 +203,7 @@
                 <!-- /+e.col.col-lg-4.col-sm-6 -->
                 <div class="s-advantages__col col-lg-4 col-sm-6">
                   <div class="s-advantages__item-body">
-                    <div class="s-advantages__img-wrap"><img class="lazy" src="#" data-src="img/advanteges-2.png" alt=""/>
+                    <div class="s-advantages__img-wrap visible"><img class="lazy" src="#" data-src="img/advanteges-2.png" alt=""/>
                     </div>
                     <div class="s-advantages__title-body">Не сушит воздух
                     </div>
@@ -199,7 +212,7 @@
                 <!-- /+e.col.col-lg-4.col-sm-6 -->
                 <div class="s-advantages__col col-lg-4 col-sm-6">
                   <div class="s-advantages__item-body">
-                    <div class="s-advantages__img-wrap"><img class="lazy" src="#" data-src="img/advanteges-3.png" alt=""/>
+                    <div class="s-advantages__img-wrap visible"><img class="lazy" src="#" data-src="img/advanteges-3.png" alt=""/>
                     </div>
                     <div class="s-advantages__title-body">Пожаробезопасен
                     </div>
@@ -208,7 +221,7 @@
                 <!-- /+e.col.col-lg-4.col-sm-6 -->
                 <div class="s-advantages__col col-lg-4 col-sm-6">
                   <div class="s-advantages__item-body">
-                    <div class="s-advantages__img-wrap"><img class="lazy" src="#" data-src="img/advanteges-4.png" alt=""/>
+                    <div class="s-advantages__img-wrap visible"><img class="lazy" src="#" data-src="img/advanteges-4.png" alt=""/>
                     </div>
                     <div class="s-advantages__title-body">Срок службы от 30 лет
                     </div>
@@ -217,7 +230,7 @@
                 <!-- /+e.col.col-lg-4.col-sm-6 -->
                 <div class="s-advantages__col col-lg-4 col-sm-6">
                   <div class="s-advantages__item-body">
-                    <div class="s-advantages__img-wrap"><img class="lazy" src="#" data-src="img/advanteges-5.png" alt=""/>
+                    <div class="s-advantages__img-wrap visible"><img class="lazy" src="#" data-src="img/advanteges-5.png" alt=""/>
                     </div>
                     <div class="s-advantages__title-body">Беззвучный
                     </div>
@@ -226,7 +239,7 @@
                 <!-- /+e.col.col-lg-4.col-sm-6 -->
                 <div class="s-advantages__col col-lg-4 col-sm-6">
                   <div class="s-advantages__item-body">
-                    <div class="s-advantages__img-wrap"><img class="lazy" src="#" data-src="img/advanteges-6.png" alt=""/>
+                    <div class="s-advantages__img-wrap visible"><img class="lazy" src="#" data-src="img/advanteges-6.png" alt=""/>
                     </div>
                     <div class="s-advantages__title-body">Любой цвет
                     </div>
@@ -235,7 +248,7 @@
                 <!-- /+e.col.col-lg-4.col-sm-6 -->
                 <div class="s-advantages__col col-lg-4 col-sm-6">
                   <div class="s-advantages__item-body">
-                    <div class="s-advantages__img-wrap"><img class="lazy" src="#" data-src="img/advanteges-7.png" alt=""/>
+                    <div class="s-advantages__img-wrap visible"><img class="lazy" src="#" data-src="img/advanteges-7.png" alt=""/>
                     </div>
                     <div class="s-advantages__title-body">экономный
                     </div>
@@ -244,7 +257,7 @@
                 <!-- /+e.col.col-lg-4.col-sm-6 -->
                 <div class="s-advantages__col col-lg-4 col-sm-6">
                   <div class="s-advantages__item-body">
-                    <div class="s-advantages__img-wrap"><img class="lazy" src="#" data-src="img/advanteges-8.png" alt=""/>
+                    <div class="s-advantages__img-wrap visible"><img class="lazy" src="#" data-src="img/advanteges-8.png" alt=""/>
                     </div>
                     <div class="s-advantages__title-body">Термоконтроль
                     </div>
@@ -253,7 +266,7 @@
                 <!-- /+e.col.col-lg-4.col-sm-6 -->
                 <div class="s-advantages__col col-lg-4 col-sm-6">
                   <div class="s-advantages__item-body">
-                    <div class="s-advantages__img-wrap"><img class="lazy" src="#" data-src="img/advanteges-9.png" alt=""/>
+                    <div class="s-advantages__img-wrap visible"><img class="lazy" src="#" data-src="img/advanteges-9.png" alt=""/>
                     </div>
                     <div class="s-advantages__title-body">экологичный 
                     </div>
