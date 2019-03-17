@@ -2,8 +2,8 @@
 	@include bgs;
 	background-color: #e5eaee;
 	background-position: top center;
+	background-image: url(../img/form-bg.jpg);
 	&.visible{
-		background-image: url(../img/form-bg.jpg);
 	}
 	.form-wrap{
 		max-width: 400px;
