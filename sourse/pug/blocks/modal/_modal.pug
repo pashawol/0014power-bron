@@ -32,6 +32,30 @@ mixin modal()
 	//- 			.h3 Скоро с Вами свяжутся
 	//- 			br 
 
+	+form-wrap()(id="modal-charact" class="zoom-anim-dialog mfp-hide modal-win modal-form" )
+		.text-center 
+			.h2.text-primary.strong POWERBRON 250
+			p.strong Подробные характеристики
+		mixin gr(t, p)
+			+e.group
+				.row
+					.col= t
+					.col-auto= p
+		+gr('Принцип обогрева','инфракрасный и конвекционный')
+		+gr('Номинальная мощность','0.250 квт (1.1А)')
+		+gr('Площадь обогрева','4-6 кв.м')
+		+gr('Напряжение','220-230в')
+		+gr('Температура обогрева','80-90с')
+		+gr('Габариты','500х500х40')
+		+gr('Комплектация','шнур без вилки')
+		+gr('Масса','5 кг')
+		+gr('Установка','настенная')
+		+gr('Гарантия','36 мес.')
+		+gr('Срок службы','25 лет')
+		+gr('Производитель','Power Bron (Россия)')
+		+e.btn.btn-primary(href="#") В КОРЗИНУ
+	// #modal-charact
+	
 	+form-wrap()(id="modal-call" class="zoom-anim-dialog mfp-hide modal-win modal-form" )
 		.text-center
 			+e.title.h3.ttu Обратный звонок
@@ -43,4 +67,5 @@ mixin modal()
 		+e.INPUT.btn.btn.btn-block.btn-warning.mb-4(type="submit" value="Рассчитать") 
 		+polite()
 	// #modal-call
+
 	// modal

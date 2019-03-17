@@ -1,6 +1,17 @@
 .modal-win {
 	display: block;
 	position: relative;
+	box-shadow: 0 4px 24px rgba(0, 0, 0, 0.09);
+background-color: #ffffff;
+margin-left: auto;
+margin-right: auto;max-width: 771px;
+padding: 40px 70px;
+.form-wrap__btn{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-top: 20px;
+}
 	.modal-content {
 		// max-width: 485px;
 		// padding-right: 40px 15px;
@@ -120,3 +131,31 @@ a {
 @include media-breakpoint-down(sm) {}
 
 @include media-breakpoint-down(xs) {}
+
+
+.form-wrap{
+	&__group{
+		padding: 20px 15px;
+		border: 1px solid rgba($color: #eceef4, $alpha: .3);
+		&:nth-child(odd){
+				background-color: rgba($color: #ebebeb, $alpha: .3);
+				// opacity: 0.3;
+		}
+		.row{
+			align-items: center;
+		}
+		.col{
+			font-weight: bold;
+		}
+		.col-auto{
+			color: $gray;
+			font-weight: 300;
+			// font-family: Roboto;
+			font-size: 24px;
+			@include mt;
+			&:hover{
+				color: $primary;
+			}
+		}
+	}
+}

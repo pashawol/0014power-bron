@@ -4,6 +4,7 @@
 @include font-face ("roboto", "../fonts/Roboto-Bold/Roboto-Bold", bold, $file-formats: woff2 woff ttf);
 @include font-face ("roboto", "../fonts/Roboto-Medium/Roboto-Medium", 500, $file-formats: woff2 woff ttf);
 @include font-face ("roboto", "../fonts/Roboto-Black/Roboto-Black", 900, $file-formats: woff2 woff ttf);
+@include font-face ("roboto", "../fonts/Robotolight/Robotolight", 300, $file-formats: woff2 woff ttf);
 
 
 $default-font: "roboto";
