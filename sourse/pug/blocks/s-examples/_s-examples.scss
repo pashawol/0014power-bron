@@ -1,0 +1,120 @@
+.s-examples {
+	background-color: #f5f5f5;
+		&.visible{
+		
+		}
+
+		&__slide-sm{
+			@include block(632, 441);
+			// box-shadow: 0 4px 24px rgba(0, 0, 0, 0.09);
+		}
+		.section-title{
+			margin-bottom: 25px;
+		}
+		&__slider{
+			margin-left: auto;
+			margin-right: auto;
+			@include media-breakpoint-up(xl) {
+
+				padding-left: 66px;
+				padding-right: 66px;
+			}
+		}
+
+		&__table{
+			background-color: #ffffff;
+			// height: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			border: 1px solid #eceef4;
+		}
+		&__block{
+			border: 1px solid #eceef4;
+			
+			font-weight: bold;
+			display: flex;
+			align-items: center;
+			min-height: 108px;
+			@include media-breakpoint-up(xl) {
+
+				padding-left: 24px;
+			}
+			padding-left: 10px;
+			padding-right: 10px;
+			&--title{
+				height: 112px;
+				width: 100%;
+				border: none;
+			}
+			&--left{
+				width: (223  * 100% / 373 );
+				margin-right: -1px;
+				margin-bottom: -1px;
+			}
+			
+			&--right{
+				width: ((373 - 223)  * 100% / 373 );
+				font-size: $h2-font-size;
+				text-transform: uppercase;
+				margin-right: -1px;
+				margin-bottom: -1px;
+			}
+
+		}
+		&__col-left{
+			@include media-breakpoint-up(xl) {
+
+				flex: 0 0 400px;
+				max-width: 400px;
+			}
+		}
+		
+		&__col-right{
+			@include media-breakpoint-up(xl) {
+
+				max-width: calc(100% - 400px);
+				flex: 0 0 calc(100% - 400px);
+			}
+		}
+
+	//
+	@include media-breakpoint-up(xl) {
+		padding-bottom: 90px;
+	}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-up(xs) {}
+	
+	//
+	@include media-breakpoint-between(md, xl) { }
+	
+	
+	//
+	@include media-breakpoint-only(xs) {}
+	@include media-breakpoint-only(sm) {}
+	@include media-breakpoint-only(md) {}
+	@include media-breakpoint-only(lg) {}
+	@include media-breakpoint-only(xl) {}
+	
+	//
+	@include media-breakpoint-down(xl) {}
+	@include media-breakpoint-down(lg) {
+		.slick-arrow{
+
+			&.l {
+				left: -15px;
+				
+			}
+			
+			&.r {
+				right: -15px;
+				
+			}
+		}
+		}
+	@include media-breakpoint-down(md) {}
+	@include media-breakpoint-down(sm) {}
+	@include media-breakpoint-down(xs) {} 
+
+}

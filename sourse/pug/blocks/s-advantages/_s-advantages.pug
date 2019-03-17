@@ -1,0 +1,47 @@
+mixin s-advantages()
+	// start s-advantages
+	+b.s-advantages.section#s-advantages.lazy-background&attributes(attributes)
+		.container
+			+e.head
+				.row
+					mixin item(t)
+						+e.col-head.col-md-4.col-sm-6
+							+e.item&attributes(attributes)
+								+e.title= t
+								block
+						// /+e.col.col-md-4.col-sm-6 
+					+item('БЫСТРЫЙ МОНТАЖ')
+						+e.text Легко крепится на стену или ставится на ножки. Сборка занимает 10 минут
+					+item('Никаких замерзающих жидкостей')(class="active")
+					+item('Естественная конвенция')
+						+e.text Нагревательный мат защищен от механических повреждений
+					
+					+item('БЫСТРЫЙ МОНТАЖ')
+						+e.text Легко крепится на стену или ставится на ножки. Сборка занимает 10 минут
+					+item('Никаких замерзающих жидкостей')
+					+item('Естественная конвенция')
+						+e.text Нагревательный мат защищен от механических повреждений
+			+e.body
+				.row
+					mixin item(i, t)
+						+e.col.col-lg-4.col-sm-6
+							+e.item-body&attributes(attributes)
+								+e.img-wrap
+									img.lazy(src="#" data-src=`img/advanteges-${i}.png`, alt="")
+								+e.title-body= t
+						// /+e.col.col-lg-4.col-sm-6 
+					+item('1','Монтаж 10 минут')
+					+item('2','Не сушит воздух')
+					+item('3','Пожаробезопасен')
+					+item('4','Срок службы от 30 лет')
+					+item('5','Беззвучный')
+					+item('6','Любой цвет')
+					+item('7','экономный')
+					+item('8','Термоконтроль')
+					+item('9','экологичный ')
+					
+				//- +item('БЫСТРЫЙ МОНТАЖ')
+				//- +item('Никаких замерзающих жидкостей')
+				//- +item('Естественная конвенция')
+				
+	// end s-advantages

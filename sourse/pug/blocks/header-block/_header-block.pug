@@ -1,0 +1,11 @@
+mixin header-block()
+	// start header-block
+	+b.header-block#header-block
+		+e.slider--js
+			- for (var x = 0; x < 3; x++)
+				+e.slide(style="background-image: url(img/head-bg.jpg);")
+					.container
+						+e.title 
+							span.text-primary Power
+							|bron –  основное экономичное отопление
+	// end header-block

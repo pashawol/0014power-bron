@@ -1,0 +1,34 @@
+mixin s-why()
+	// start s-why
+	+b.s-why.section#s-why.lazy-background&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 КАК КУПИТЬ  
+			.row
+				mixin item(i, t)
+					+e.col.col-lg-3.col-sm-6
+						+e.item&attributes(attributes)
+							+e.img-wrap
+								img.lazy(src="#" data-src=`img/why-${i}.png`, alt="")
+							block
+					// /+e.col.col-lg-4.col-sm-6 
+				+item('1','')
+					+e.title Расчёт
+						br
+						| отопления
+				+item('2','')
+					+e.title ЗАКАЗ 
+						br
+						| С ДОСТАВКОЙ
+						br
+						| НА ДОМ
+				+item('3','')
+					+e.title ОПЛАТА
+						br
+						| ЗАКАЗА
+				+item('4','')
+					+e.title ЗАКАЗ
+						br
+						| НА СКЛАД
+
+	// end s-why

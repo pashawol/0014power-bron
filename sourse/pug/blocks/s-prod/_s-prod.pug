@@ -1,0 +1,52 @@
+mixin s-prod()
+	// start s-prod
+	+b.s-prod.section#s-prod.lazy-background&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 МОДЕЛИ POWERBRON
+			- for (var x = 0; x < 3; x++)
+				+e.item
+					.row
+						+e.left-col.col-lg-auto
+							+e.head
+								.row 
+									.col
+										.h2.strong.mb-0  POWERBRON 250
+									.col-sm-auto
+										+e.color
+											strong Цвет:
+											+e.color-item(style="background-color: #000000;")
+											+e.color-item(style="background-color: #fff;")
+							+e.img-wrap
+								img.res-i.lazy(src="#" data-src="img/prod.jpg", alt="")
+						.col
+							+e.head
+								.row 
+									.col-md.strong Цена: 
+										| 
+										span.h2.strong 5 000 руб.
+
+									.col-sm-auto.col
+										+e.btn.btn-secondary(href="#") ПОДРОБНЕЕ
+									.col-sm-auto.col
+										+e.btn.btn-primary(href="#") В КОРЗИНУ
+							+e.body.row.no-gutters
+								+e.col.col-6.text-center
+									.strong Мощность:
+									.text-gray.fw-300  250w
+								
+								+e.col.col-6.text-center
+									.strong Напряжение:
+									.text-gray.fw-300  220v
+								
+								+e.col.col-6.text-center
+									.strong Минимальный ток:
+									.text-gray.fw-300 1.1А
+								
+								+e.col.col-6.text-center
+									.strong Габаритные размеры:
+									.text-gray.fw-300  50х50
+								
+
+				// /+e.item
+	// end s-prod

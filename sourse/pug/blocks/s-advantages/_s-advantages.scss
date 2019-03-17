@@ -1,0 +1,274 @@
+.s-advantages {
+	padding-top: 0 !important;
+	@include media-breakpoint-up(md) {
+
+		&.visible &__head{
+			background-image: url(../img/advanteges-bg.jpg);
+			background-position: center -25px;
+			background-repeat: no-repeat;
+		}
+	}
+	&__head{
+
+		padding-top: 45px !important;
+		margin-bottom: 40px;
+	}
+		&__item{
+			box-shadow: 0 4px 24px rgba(0, 0, 0, 0.09);
+			border-radius: 15px;
+			border: 1px solid #cf0f17;
+			background-color: #ffffff;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			@include media-breakpoint-up(lg) {
+
+				justify-content: center;
+			}
+		}
+		&__title{
+			@extend .h2;
+			text-transform: uppercase;
+			@include media-breakpoint-up(md) {
+
+				max-width: 170px;
+			}
+		}
+		counter-reset: num;
+	&__item {
+		position: relative; 
+		@include media-breakpoint-up(xl) {
+
+			padding-left: 140px;
+			padding-right: 20px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			
+		}
+		padding-right: 10px;
+		@include media-breakpoint-up(lg) {
+			padding-left: 100px;
+			padding-top: 10px;
+
+		}
+		padding-top: 30px;
+		padding-left: 10px;
+		padding-bottom: 10px;
+		min-height: 158px;
+		&::before {
+			content: counter(num);
+			counter-increment: num;
+			@include media-breakpoint-up(lg) {
+				
+				@include a-cent(y);
+				position: absolute;
+					// margin-top: 0;
+					margin-bottom: 0;
+					margin-left: 0;
+				}
+				margin-bottom: 20px;
+				margin-left: 10px;
+				position: static;
+			width: 54px;
+			height: 54px;
+			box-shadow: 0 2px 4px rgba(83, 18, 12, 0.13);
+			background-color: #d40e11;
+			border-radius: 50%;
+			color: #ffffff;
+			font-size: 22px;
+			font-weight: 700;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			box-shadow: 0 0 0 6px rgba($color: #d40e11, $alpha: .4),
+			0 0 0 12px rgba($color: #d40e11, $alpha: .2);
+			@include media-breakpoint-up(xl) {
+
+				left: 50px;
+			}
+			left: 20px;
+		}
+		&.active{
+			background-color: #cf0f17;
+			background-image: linear-gradient(to top, rgba(206, 15, 23, 0.61) 0%, rgba(249, 100, 103, 0.61) 100%);
+			color: #ffffff;
+			&::before{
+				box-shadow: 0 0 0 6px  #db6961,
+				0 0 0 12px #db5958; 
+			}
+		}
+	}
+	&__text{
+		color: #9ea7ad; 
+		font-size: $small;
+		font-weight: 300;
+	}
+	&__col-head{
+		margin-bottom: 30px;
+		&:nth-child(1),
+		&:nth-child(2),
+		&:nth-child(3){
+			@include media-breakpoint-up(lg) {
+
+				margin-bottom: 512px;
+			}
+				@include media-breakpoint-up(md) {
+
+					margin-bottom: 340px;
+				}
+		}
+		&::before{
+			content: '';
+			position: absolute;
+		}
+		@include media-breakpoint-up(lg){
+
+			
+			&:nth-child(1){
+				&::before{
+					left: 48%;
+					top: 100%;
+					
+					border-left: 1px solid #cf0f17;
+					border-bottom: 1px solid #cf0f17;
+				}
+			}
+			
+			&:nth-child(3){
+				&::before{
+					right: 48%;
+					top: 100%;
+					
+					border-right: 1px solid #cf0f17;
+					border-bottom: 1px solid #cf0f17;
+				}
+			}
+			
+			&:nth-child(4){
+				&::before{
+					left: 48%;
+					bottom: 100%;
+					
+					border-left: 1px solid #cf0f17;
+					border-top: 1px solid #cf0f17;
+				}
+			}
+			
+			&:nth-child(6){
+				&::before{
+					right: 48%;
+					bottom: 100%;
+					
+					border-right: 1px solid #cf0f17;
+					border-top: 1px solid #cf0f17;
+				}
+			}
+			
+			&:nth-child(2){
+				&::before{
+					left: 50%;
+					top: 100%;
+					width: 1px;
+					height: 100px;
+					border-right: 1px solid #cf0f17; 
+				}
+			}
+			
+			&:nth-child(5){
+				&::before{
+					left: 50%;
+					bottom: 100%;
+					width: 1px;
+					height: 100px;
+					border-right: 1px solid #cf0f17; 
+				}
+			}
+			&:nth-child(1),
+			&:nth-child(3),
+			&:nth-child(4),
+			&:nth-child(6){
+				&::before{
+					@include media-breakpoint-up(xl) {
+
+						width: 140px;
+					}
+					width: 50px;
+					@include media-breakpoint-up(lg) {
+
+						height: 222px;
+					}
+					height: 22px;
+				}
+			}
+		}
+
+		
+	}
+
+	&__item-body{
+		display: flex; 
+		margin-right: -8px;
+		@include media-breakpoint-up(xl) {
+
+			padding-left: 30px;
+		}
+		margin-bottom: 20px;
+
+	}
+	&__img-wrap{
+		margin-left: 8px;
+		margin-right: 8px;
+		width: (82px * 1.08);
+		max-width: (82px * 1.08);
+		min-width: (82px * 1.08);
+		height: (98px * 1.08);
+		background-size: 100% 100%;
+		padding-top: 20px;
+		// display: flex;
+		// align-items: center;
+		text-align: center;
+		// justify-content: center;
+		flex-grow: 1;
+		img{ 
+			// flex-shrink: -1;
+		}
+	}
+	&__title-body{
+		@include media-breakpoint-up(lg) {
+
+			font-size: $h2-font-size;
+		}
+		font-size: $h2-font-size * .75;
+		margin-left: 8px;
+		padding-top: 22px;
+		text-transform: uppercase;
+	}
+	&.visible	&__img-wrap{ 
+		background-image: url(../img/advanteges-item-bg.png);
+	}
+	//
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-up(xs) {}
+	
+	//
+	@include media-breakpoint-between(md, xl) { }
+	
+	
+	//
+	@include media-breakpoint-only(xs) {}
+	@include media-breakpoint-only(sm) {}
+	@include media-breakpoint-only(md) {}
+	@include media-breakpoint-only(lg) {}
+	@include media-breakpoint-only(xl) {}
+	
+	//
+	@include media-breakpoint-down(xl) {}
+	@include media-breakpoint-down(lg) {}
+	@include media-breakpoint-down(md) {}
+	@include media-breakpoint-down(sm) {}
+	@include media-breakpoint-down(xs) {} 
+
+}

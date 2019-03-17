@@ -1,0 +1,23 @@
+
+mixin mob-mnu()
+	
+	+b.menu-mobile--js.d-lg-none
+		+b.toggle-menu-mobile--js
+			span
+		+e.inner
+		
+			+mnu()
+			+b.top-line.px-3.py-3
+				+e.btn.btn-primary(href="#") РАССЧИТАТЬ отопление
+				+e.btn.btn-light(href="#") СТАТЬ ПАРТНЁРОМ
+				+e.time
+						+icon('clock')
+						|  с 8:00 до 20:00 (Без выходных)
+	//  мобильное меню
+mixin top-nav() 
+	// start top-nav
+	+b.top-nav.d-none.d-lg-block
+		.container
+			+mnu()
+					
+	// end top-nav

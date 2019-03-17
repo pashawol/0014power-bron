@@ -1,0 +1,36 @@
+mixin top-line()
+	// start .top-line
+	+b.top-line
+		.container
+			.row
+				+e.logo.col-auto 
+					a(href="#")
+						img(src="img/logo.png", alt="")
+				.col
+					.row
+						.col-sm-auto
+							+e.tel(href="tel:+7(495)1234567") +7 (495) 123 45 67
+							+e.time.d-none.d-md-block
+								+icon('clock')
+								|  с 8:00 до 20:00 (Без выходных)
+						+e.btn-wrap.col-auto.d-none.d-lg-block
+							+e.btn.btn-primary(href="#") РАССЧИТАТЬ отопление
+							+e.btn.btn-light(href="#") СТАТЬ ПАРТНЁРОМ
+						.col
+							+e.link-wrap.d-inline-block.d-sm-block
+								+e.link(href="#")
+									+icon('login')
+									span.d-none.d-sm-inline Вход
+								
+								+e.link(href="#")
+									+icon('user')
+									span.d-none.d-sm-inline Регистрация
+							+e.basket(href="#")
+								+e.icon-wrap
+									+icon('basket')
+									+e.count 0
+								span.d-none.d-sm-inline  Корзина пуста
+				.col-auto.d-lg-none
+					+b.toggle-menu-mobile--js.d-lg-none
+						span
+	// end .top-line

@@ -1,0 +1,22 @@
+mixin s-examples()
+	// start s-examples
+	+b.s-examples.section#s-examples.lazy-background&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 ПРИМЕРЫ НАШИХ РАБОТ
+			+e.slider--js
+				- for (var x = 0; x < 3; x++)
+					+e.slide
+						.row
+							+e.col-left.col-lg-4.order-lg-first.order-last
+								+e.table
+									+e.block--title.ttu Среднее потребление электричества:
+									- for (var x = 0; x < 3; x++)
+										+e.block--left Среднее потребление электричества:
+										+e.block--right 5 000 руб. 
+							+e.col-right.col-lg-8
+								+e.slider-sm--js
+									- for (var x = 0; x < 3; x++)
+										+e.slide-sm.img-bg
+											img(src="#", data-lazy="img/example-img.jpg" alt="")
+	// end s-examples

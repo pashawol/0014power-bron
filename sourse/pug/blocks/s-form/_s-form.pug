@@ -1,0 +1,11 @@
+mixin s-form()
+	// start s-form
+	+b.s-form.section#s-form.lazy-background&attributes(attributes)
+		.container 
+			+form-wrap
+				+e.H2.title ЗАПОЛНИТе ЗАЯВКУ И&nbsp;наши специалисты свяжутся с&nbsp;вами
+				+input('text','Имя')
+				+input('tel','Телефон')
+				+e.btn(type="submit") заказать звонок
+
+	// end s-form

@@ -1,0 +1,30 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-advantages/_s-advantages.pug
+include ../blocks/s-prod/_s-prod.pug
+include ../blocks/s-examples/_s-examples.pug
+include ../blocks/s-why/_s-why.pug
+
+block title
+	title title
+
+block pagecontent
+	+mob-mnu()
+	+header()
+		+top-line()
+		+top-nav()
+		
+	+header-block()
+	+s-advantages
+	+s-form()
+	+s-prod
+	+s-examples
+	+s-why
+
+	//- +s-contact()
+	+footer()
+	
+	
