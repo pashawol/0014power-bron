@@ -3,7 +3,9 @@ mixin s-examples()
 	+b.s-examples.section#s-examples.lazy-background&attributes(attributes)
 		.container
 			+b.section-title.text-center
-				h2 ПРИМЕРЫ НАШИХ РАБОТ
+				block
+					
+				
 			+e.slider--js
 				- for (var x = 0; x < 3; x++)
 					+e.slide

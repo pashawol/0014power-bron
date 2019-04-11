@@ -54,7 +54,12 @@ mixin soc()
 mixin mnu()
 	- var nav= {"Преимущества":"#","Продукция":"#","Доставка":"#" ,"О комании":"#","Контакты":"#"} 
 	ul.menu
-		li.menu-item.current-menu-item: a(href="#") Применение
+		li.menu-item.menu-item-has-children
+			a(href="#") Применение
+			ul.sub-menu
+				li.menu-item: a(href="#") ОТОПЛЕНИЕ КВАРТИРЫ
+				li.menu-item: a(href="#") ОТОПЛЕНИЕ ДОМА
+				li.menu-item: a(href="#") ОТОПЛЕНИЕ БАЛКОНА
 		each linkPatch, linkName in nav
 			li.menu-item: a(href="#")= linkName
 

@@ -131,14 +131,31 @@
 		}
 	&-item{
 		flex-grow: 1;
+		position: relative;
+		&:hover,
 		&.current-menu-item{
-			a{
+			> a{
 				border-color:  #b00c15;
 				background-color: #cb0f17;
 				color: #ffffff; 
 				background-image: linear-gradient(to top, rgba(206, 15, 23, 0.61) 0%, rgba(249, 100, 103, 0.61) 100%);
 				&::before{
 					opacity: 1;
+				}
+			}
+		}
+		@include media-breakpoint-up(lg) {
+
+			&:not(:hover){
+				.sub-menu{ 
+					width: 1px;
+					height: 1px;
+					width: 1px;
+					height: 1px;
+					margin: -1px;
+					border: 0;
+					padding: 0; 
+					overflow: hidden;
 				}
 			}
 		}
@@ -151,8 +168,12 @@
 		font-weight: 400;
 		line-height: 32px;
 		text-transform: uppercase;
-		text-align: center;
-		padding: rem(22) rem(2);
+		@include media-breakpoint-up(lg) {
+
+			text-align: center;
+			padding: rem(22) rem(2);
+		}
+		padding: rem(22) rem(12);
 		border-left: 1px solid #eceef4;
 		border-right: 1px solid #eceef4;
 		@include mt;
@@ -166,18 +187,65 @@
 			@include mt;
 			opacity: 0;
 		}
+		// &:hover{
+		// 	border-color:  #b00c15;
+		// 	background-color: #cb0f17;
+		// 	color: #ffffff; 
+		// 	background-image: linear-gradient(to top, rgba(206, 15, 23, 0.61) 0%, rgba(249, 100, 103, 0.61) 100%);
+		// 	&::before{
+		// 		opacity: 1;
+		// 	}
+		// }
+	}
+}
+.sub-menu{
+
+	list-style-type: none;
+	@include media-breakpoint-up(lg) {
+
+		position: absolute;
+		top: 100%;
+		left: 0;
+		box-shadow: 0 3px 4px rgba(151, 151, 151, 0.38);
+	}
+	box-shadow: inset 0 3px 4px rgba(151, 151, 151, 0.38);
+	border: 1px solid #eceef4;
+	background-color: #ffffff;
+	z-index: 200;
+	// @include mt;
+	a{
+		text-align: left !important;
+		display: block;
+		@include media-breakpoint-up(lg) {
+
+			min-width: 300px;
+			padding-left: rem(34) !important;
+			padding-right: rem(34) !important;
+			white-space: nowrap;
+		}
+		border-bottom: 1px solid #eceef4 !important;
+		border-left: none;
+		border-right: none;
+		&::before{
+			display: none;
+		}
 		&:hover{
-			border-color:  #b00c15;
-			background-color: #cb0f17;
-			color: #ffffff; 
-			background-image: linear-gradient(to top, rgba(206, 15, 23, 0.61) 0%, rgba(249, 100, 103, 0.61) 100%);
-			&::before{
-				opacity: 1;
+			
+		}
+	}
+	.menu-item{
+		&:hover,
+		&.current-menu-item{
+			> a{
+				background: #eceef4;
+				color: $dark;
+				border-bottom: 1px solid #eceef4 !important;
 			}
 		}
 	}
 }
 }
+
 
 // мобильное меню
 
@@ -315,6 +383,7 @@ $h: em(2);
 
 			padding: 10px;
 			display: block;
+			text-align: left;
  
 		}
 	}

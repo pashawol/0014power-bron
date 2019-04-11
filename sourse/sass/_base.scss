@@ -74,19 +74,18 @@ a{
 .section-title {
 	@extend .h2;
 	padding-bottom: em(10);
-
+	> h1,
 	>h2 {
 		font-size: inherit;
+		text-transform: uppercase;
+		font-weight: bold;
 
 		@include media-breakpoint-up(md) {}
 	}
 }
 
 @include media-breakpoint-up(lg) {
-	.container {
-		// padding-left: 0;
-		// padding-right: 0;
-	}
+ 
 }
 
 body,
@@ -426,4 +425,8 @@ input::-webkit-inner-spin-button {
 		padding: 0;
 		clip: rect(0 0 0 0 );
 		overflow: hidden;
+}
+
+.mw-730{
+	max-width: 740px;
 }

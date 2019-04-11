@@ -140,6 +140,9 @@
         color: #ffffff !important;
       }
     }
+    ul ul{
+      display: none;
+    }
 // 
 @include media-breakpoint-up(xl) {}
 

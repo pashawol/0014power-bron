@@ -1,0 +1,43 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-advantages/_s-advantages.pug
+include ../blocks/s-prod/_s-prod.pug
+include ../blocks/s-examples/_s-examples.pug
+include ../blocks/s-why/_s-why.pug
+
+block title
+	title title
+
+block pagecontent
+	+mob-mnu()
+	+header()
+		+top-line()
+		+top-nav()
+		
+	+b.s-content.section
+		.container
+			+b.section-title.mw-730
+				h1 Доставка в москве и МО
+				.small.text-gray.mb-3 Доставка
+					br
+					| Верхний блок сайта представлен в виде контента. Добавление какого-либо баннера на усмотрение дизайнера.
+
+				.small.text-gray.mb-3 Карта
+
+				.small.text-gray.mb-3 В данном блоке представлена карта России, на карте можно отобразить либо разграничение на округа России или указать города с населением более 500 тысяч населения.
+			img.res-i.lazy(src="#" data-src="img/map.jpg", alt="")
+	//- img.res-i(src="img/kvartiri.jpg", alt="")
+	//- +s-examples
+	//- 	h2 ОТОПЛЕНИЕ квартиры
+	//- +s-prod
+	//- +s-advantages
+	+s-form()
+	//- +s-why
+
+	//- +s-contact()
+	+footer()
+	
+	
