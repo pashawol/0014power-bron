@@ -1,0 +1,75 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-advantages/_s-advantages.pug
+include ../blocks/s-prod/_s-prod.pug
+include ../blocks/s-examples/_s-examples.pug
+include ../blocks/s-why/_s-why.pug
+include ../blocks/aside/_aside.pug
+include ../blocks/s-about/_s-about.pug
+
+block title
+	title О комании
+
+block pagecontent
+	+mob-mnu()
+	+header()
+		+top-line()
+		+top-nav() 
+	.main-wrap.section
+		.container
+			.row.no-gutters
+				.col-lg-8.bg-white
+					+b.s-content
+						+b.section-title.mw-730
+							h1 МИССИЯ И ЦЕННОСТИ
+							.small.text-gray.mb-3 Потребляет всего от 25 вт на 1 м.кв – это экономично
+								br
+								| Обогревает полезным теплом
+								br
+								| Не нужны трубы и батареи, полная экономия на монтаже, обслуживании и пространстве в доме
+								br
+								| Легкая и быстрая сборка, достаточно подключения к электричеству
+								br
+								| Обеспечивает более 25 лет надежной работы без обслуживания
+						.row.row--sm.align-items-end
+							.col-auto.d-none.d-lg-block
+								+e.arrow-wrap
+									img.lazy(src="#" data-src="img/miss-1.jpg", alt="")
+							.col
+								.small.text-gray.pb-2 Потребляет всего от 25 вт на 1 м.кв – это экономично Обогревает полезным теплом Не нужны трубы и батареи, полная экономия на монтаже, обслуживании и пространстве в доме
+
+						
+						.row.row--sm.align-items-center
+							.col-auto.d-none.d-lg-block
+								+e.arrow-wrap
+									img.lazy(src="#" data-src="img/miss-2.jpg", alt="")
+							.col
+								.small.text-gray.pb-2 Потребляет всего от 25 вт на 1 м.кв – это экономично Обогревает полезным теплом Не нужны трубы и батареи, полная экономия на монтаже, обслуживании и пространстве в доме
+
+						
+						.row.row--sm.align-items-center
+							.col-auto.d-none.d-lg-block
+								+e.arrow-wrap
+									img.lazy(src="#" data-src="img/miss-3.jpg", alt="")
+							.col
+								.small.text-gray.pb-2 Потребляет всего от 25 вт на 1 м.кв – это экономично Обогревает полезным теплом Не нужны трубы и батареи, полная экономия на монтаже, обслуживании и пространстве в доме
+
+						
+						.row.row--sm
+							.col-auto.d-none.d-lg-block
+								+e.arrow-wrap
+									img.lazy(src="#" data-src="img/miss-4.jpg", alt="")
+							.col
+								.small.text-gray.pb-2 Потребляет всего от 25 вт на 1 м.кв – это экономично Обогревает полезным теплом Не нужны трубы и батареи, полная экономия на монтаже, обслуживании и пространстве в доме
+
+						
+				.col-lg-4.order-lg-first
+					+aside
+	+s-form()
+	//- +s-contact()
+	+footer()
+	
+	

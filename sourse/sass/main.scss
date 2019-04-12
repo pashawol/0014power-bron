@@ -40,6 +40,10 @@ $output-bourbon-deprecation-warnings: false;
 @import "../pug/blocks/s-why/_s-why";
 
 
+@import "../pug/blocks/aside/_aside";
+@import "../pug/blocks/s-about/_s-about";
+
+
 @import "../pug/blocks/s-form/s-form";
 @import "../pug/blocks/footer/footer";
 @import "../pug/blocks/modal/modal";

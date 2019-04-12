@@ -1,9 +1,11 @@
 .header{
-	margin-bottom: 77px;
+  @include media-breakpoint-up(lg) {
+
+    margin-bottom: 77px;
+  }
   // 
   @include media-breakpoint-up(xl) {}
 
-  @include media-breakpoint-up(lg) {}
 
   @include media-breakpoint-up(md) {}
 

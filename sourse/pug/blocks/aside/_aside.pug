@@ -1,0 +1,31 @@
+mixin aside()
+	// start aside
+	+b.aside
+		+e.link(href="#")
+			+e.DIV.img-wrap
+				img.def.res-i(src="img/aside-1.png", alt="")
+				img.active.res-i(src="img/aside-1--active.png", alt="")
+			+e.DIV.text POWER BRON
+		
+		+e.link--active(href="#")
+			+e.DIV.img-wrap
+				+icon('aside-2')
+			+e.DIV.text МИССИЯ И&nbsp;ЦЕННОСТИ
+		
+		+e.link(href="#")
+			+e.DIV.img-wrap
+				+icon('aside-3')
+			+e.DIV.text ПРОИЗВОДСТВО
+		
+		+e.link(href="#")
+			+e.DIV.img-wrap
+				+icon('aside-4')
+			+e.DIV.text СЕРТИФИКАТЫ
+		
+		+e.link(href="#")
+			+e.DIV.img-wrap
+				+icon('aside-5')
+			+e.DIV.text ВАКАНСИИ
+
+
+	// end aside
