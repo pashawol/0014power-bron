@@ -88,7 +88,12 @@
 			}
 			left: 20px;
 		}
+		@include mt;
+		&:hover,
 		&.active{
+			.s-advantages__text{
+				color: #ffffff;
+			}
 			background-color: #cf0f17;
 			background-image: linear-gradient(to top, rgba(206, 15, 23, 0.61) 0%, rgba(249, 100, 103, 0.61) 100%);
 			color: #ffffff;
@@ -206,7 +211,12 @@
 	}
 
 	&__item-body{
-		display: flex; 
+		display: flex;
+		&:hover{
+			.s-advantages__img-wrap{
+				transform: rotateY(180deg);
+			}
+		} 
 		margin-right: -8px;
 		@include media-breakpoint-up(xl) {
 
@@ -224,6 +234,7 @@
 		height: (98px * 1.08);
 		background-size: 100% 100%;
 		padding-top: 20px;
+		@include mt;
 		// display: flex;
 		// align-items: center;
 		text-align: center;

@@ -1,0 +1,56 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-advantages/_s-advantages.pug
+include ../blocks/s-prod/_s-prod.pug
+include ../blocks/s-examples/_s-examples.pug
+include ../blocks/s-why/_s-why.pug
+include ../blocks/aside/_aside.pug
+include ../blocks/s-about/_s-about.pug
+
+block title
+	title О комании
+
+block pagecontent
+	+mob-mnu()
+	+header()
+		+top-line()
+		+top-nav() 
+	+b.s-content.section
+		.container
+			.row
+				.col-lg-6
+					+b.section-title.mw-730
+						h1 контакты
+					.small.pb-2.text-body Юридический адрес:
+
+					.small.pb-2.text-gray Россия, Московская обл., Клинский р-н, д. Ямуга, д.58 А
+
+					.small.pb-2.text-body Фактический адрес:
+
+					.small.pb-2.text-gray Россия, Московская обл., Клинский р-н, д. Ямуга, д.58 А
+
+					.small.pb-2.text-body Телефон, факс:
+
+					.small.pb-2.text-gray +7 (903) 729-87-57
+
+					.small.pb-2.text-body Электронная почта:
+
+					.small.pb-2.text-gray kassabronya@mail.ru
+
+					.small.pb-2.text-body Режим работы: 
+
+					.small.pb-2.text-gray без выходных с 8:00-20:00
+
+				.col.d-none.d-lg-block
+					img.res-i.lazy(src="#" data-src="img/contact.jpg", alt="")
+			+e.map-wrap
+				<script   async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0ef35e654bff9aa9468a023cc083c2104745b6bce49a31c13a357ffe79528526&amp;width=100%25&amp;height=516&amp;lang=ru_RU&amp;scroll=false"></script>
+			 
+	+s-form()
+	//- +s-contact()
+	+footer()
+	
+	

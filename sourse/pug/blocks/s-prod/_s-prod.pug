@@ -7,7 +7,7 @@ mixin s-prod()
 			- for (var x = 0; x < 3; x++)
 				+e.item
 					.row
-						+e.left-col.col-lg-auto
+						+e.left-col.col-lg-auto.tabs
 							+e.head
 								.row 
 									.col
@@ -15,10 +15,15 @@ mixin s-prod()
 									.col-sm-auto
 										+e.color
 											strong Цвет:
-											+e.color-item(style="background-color: #000000;")
-											+e.color-item(style="background-color: #fff;")
-							+e.img-wrap
-								img.res-i.lazy(src="#" data-src="img/prod.jpg", alt="")
+											.tabs__caption
+											
+												+e.color-item.tabs__btn.active(style="background-color: #000000;")
+												+e.color-item.tabs__btn(style="background-color: #fff;")
+							+e.img-wrap.tabs__wrap
+								.tabs__content.active
+									img.res-i.lazy(src="#" data-src="img/prod.jpg", alt="")
+								.tabs__content
+									img.res-i.lazy(src="#" data-src="img/prod2.jpg", alt="")
 						.col
 							+e.head
 								.row 
