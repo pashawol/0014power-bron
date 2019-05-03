@@ -3,6 +3,20 @@ $output-bourbon-deprecation-warnings: false;
 @import "bourbon";
 @import "vars";
 @import "bootstrap/bootstrap";
+@import "bootstrap.min.scss";
+
+.input-group{
+  .form-control{
+    height: 60px;
+  }
+}
+.row,
+.container{
+  &::before,
+  &::after{
+    display: none;
+  }
+}
 // @import "../libs/animate";
 // @import "fontawesome-pro-5.0.8/web-fonts-with-css/scss/fontawesome";
 // @import "fontawesome-pro-5.0.8/web-fonts-with-css/scss/fa-brands";

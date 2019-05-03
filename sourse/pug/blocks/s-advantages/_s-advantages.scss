@@ -12,6 +12,7 @@
 
 		padding-top: 45px !important;
 		margin-bottom: 40px;
+		counter-reset: num;
 	}
 		&__item{
 			box-shadow: 0 4px 24px rgba(0, 0, 0, 0.09);
@@ -22,10 +23,11 @@
 			display: flex;
 			flex-direction: column;
 			@include media-breakpoint-up(lg) {
-
+				
 				justify-content: center;
 			}
 		}
+	
 		&__title{
 			@extend .h2;
 			text-transform: uppercase;
@@ -34,7 +36,6 @@
 				max-width: 170px;
 			}
 		}
-		counter-reset: num;
 	&__item {
 		position: relative; 
 		@include media-breakpoint-up(xl) {
