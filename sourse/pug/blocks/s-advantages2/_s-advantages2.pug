@@ -1,0 +1,12 @@
+mixin s-advantages2()
+	// start s-advantages2
+	+b.s-advantages2.section#s-advantages2.lazy-background&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 НАШИ ПРЕИМУЩЕСТВА
+			.row
+				each val, index in {1:'Расходует от 25W/2 кв.м до 60 w/2 кв.м Масленные радиаторы расходуют в три раза больше ',2:'Расходует от 25W/2 кв.м до 60 w/2 кв.м Масленные радиаторы расходуют в три раза больше ',3:'Эффект естетсвенной конфекции происходит благодаря температурному перепаду между стенками обогревателя и ускоряет процесс нагрева комнаты',4:'Система не создает горячих и холодных зон, не сжигает кислород, не сушит воздух, препятствует образованию плесени.'}
+					+e.col.col-lg-3.col-sm-6
+						img.res-i(src=`img/s-advantages2-${index}.png`, alt="")
+						.small= val
+	// end s-advantages2

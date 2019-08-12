@@ -1,46 +1,17 @@
-.s-content {
-
-	&__map-wrap{
-		position: relative; 
-		@include media-breakpoint-up(md) {
-
-			padding-top: 60px;
-			padding-bottom: 60px;
-		}
-		padding-top: 30px;
-		padding-bottom: 30px;
+.s-advantages2 {
+	color: #ffffff;
+	background-color: #c11822;
+	text-align: center;
+	padding-bottom: 0;
+	img{
+		margin-bottom: 1rem;
 	}
-	&__arrow-wrap{
-		position: relative;
-	}
-	&__text{
-		@include media-breakpoint-up(lg) {
-
-			position: absolute;
-			left: 0;
-		// top: 0;
-		bottom: rem(15);
-		color: #ffffff;
-		font-weight: 700;
-		padding: rem(10) 15%;
-		padding-left: 16%;
-		height: rem(76);
-		display: flex;
-		align-items: center;
-		width: 100%;
-	}
-	text-transform: uppercase;
-		&--3{
-			bottom: rem(40);
-			
-		}
+		&.visible{
 		
-		&--4{
-			bottom: rem(70);
-			
 		}
-
-	}
+		&__col{
+			margin-bottom: 2rem;
+		}
 	//
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
